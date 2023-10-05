@@ -56,10 +56,20 @@
 
 // var seconditem = document.querySelector('.item:nth-child(2)');
 // seconditem.style.color='yellow';
-var seconditem =document.querySelector('li:nth-child(2)');
-seconditem.style.backgroundColor='green';
-var thirditem =document.querySelector('li:nth-child(3)');
-thirditem.style.display='none'
+// var seconditem =document.querySelector('li:nth-child(2)');
+// seconditem.style.backgroundColor='green';
+// var thirditem =document.querySelector('li:nth-child(3)');
+// thirditem.style.display='none'
 
+
+///querySelectorall=========================================================================================================
+var seconditem = document.querySelectorAll('li')
+seconditem[1].style.color='green'
+var oddd =document.querySelectorAll('li:nth-child(odd)')
+// var even =document.querySelectorAll('li:nth-child(even)')
+for(let i=0;i<oddd.length;i++){
+    oddd[i].style.backgroundColor='green'
+    // even[i].style.backgroundColor='red'
+}
 
 
